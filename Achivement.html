@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="Achivement.css">
+  <link rel="icon" href="Assets/achivement new.svg">
+</head>
+<body>
+  <h1 id="achievementHeading">Achievements</h1>
+  <div class="project-card" data-aos="fade-up">
+    <div class="project-title">Smart Home Automation System</div>
+    <div class="tabs">
+      <div class="tab active" data-tab="overview" onclick="showTab('overview')">Overview</div>
+      <div class="tab" data-tab="gallery" onclick="showTab('gallery')">Gallery</div>
+      <div class="tab" data-tab="video" onclick="showTab('video')">Video</div>
+      <div class="tab" data-tab="stats" onclick="showTab('stats')">Details</div>
+      <div class="tab" data-tab="tech" onclick="showTab('tech')">Tech Stack</div>
+    </div>
+    
+    <div id="overview" class="tab-content active">
+      <p>This project is a smart home automation system that enables control of lights, fans, and appliances via a
+        custom Android app over WiFi. It uses an ESP8266 microcontroller, sensors for feedback, and relays for device
+        control.</p>
+      <ul>
+        <li>Real-time control using mobile app</li>
+        <li>Built with Arduino IDE, Firebase, and ESP8266</li>
+        <li>Expandable to voice assistants and security systems</li>
+      </ul>
+    </div>
+
+    <div id="gallery" class="tab-content">
+      <div class="gallery">
+        <img src="images/image1.jpg" alt="Project Image 1" />
+        <img src="images/image2.jpg" alt="Project Image 2" />
+        <img src="images/image3.jpg" alt="Project Image 3" />
+        <img src="images/image4.jpg" alt="Project Image 4" />
+        <img src="images/image1.jpg" alt="Project Image 1" />
+        <img src="images/image2.jpg" alt="Project Image 2" />
+        <img src="images/image3.jpg" alt="Project Image 3" />
+        <img src="images/image4.jpg" alt="Project Image 4" />
+        <img src="images/image1.jpg" alt="Project Image 1" />
+        <img src="images/image2.jpg" alt="Project Image 2" />
+        <img src="images/image3.jpg" alt="Project Image 3" />
+        <img src="images/image4.jpg" alt="Project Image 4" />
+      </div>
+    </div>
+
+    <div id="video" class="tab-content">
+      <video controls>
+        <source src="Assets/Video/Kanpuriye_2019.mkv" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div id="stats" class="tab-content">
+      <p><strong>Start Date:</strong> <span class="highlight">2024-01-05</span></p>
+      <p><strong>End Date:</strong> <span class="highlight">2024-01-20</span></p>
+      <p><strong>Duration:</strong> <span class="highlight">15 days</span></p>
+      <p><strong>Built By:</strong> <span class="highlight">Self</span></p>
+
+      
+      <div>Hardware: <span class="highlight">60%</span></div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
+      <p class="meta"><strong>Hardware Components:</strong> Arduino UNO, ESP8266, Relay Module, Sensors</p>
+
+      
+      <div>Software: <span class="highlight">40%</span></div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 40%;"></div>
+      </div>
+      <p class="meta"><strong>Software Components:</strong> Arduino IDE, MIT App Inventor, Firebase</p>
+      
+      <button onclick="toggleComponents()"
+        style="margin-top: 15px; margin-bottom: 10px; padding: 8px 15px; background-color: #00e6e6; color: #000; border: none; border-radius: 5px;">
+        Show Components
+      </button>
+      
+      <div id="componentGallery" style="display: none; margin-top: 20px;">
+        <div class="gallery">
+          <img src="components/arduino.jpg" alt="Arduino" />
+          <img src="components/esp8266.jpg" alt="ESP8266" />
+          <img src="components/relay.jpg" alt="Relay Module" />
+          <img src="components/sensor.jpg" alt="Sensor" />
+          <img src="components/mit_app.jpg" alt="MIT App" />
+        </div>
+      </div>
+    </div>
+
+    <div id="tech" class="tab-content">
+      <p><strong>Technologies Used:</strong> <span class="highlight">Arduino, ESP8266, Android App, Sensors,Relays</span></p>
+    </div>
+    
+    <a href="projects/smart_home_report.pdf" download>
+      <button style="padding: 10px 20px; background-color: #00e6e6; color: #111; border: none; border-radius: 5px; cursor: pointer;">Download Project Report</button></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="Achivement.js"></script>
+</body>
+</html>

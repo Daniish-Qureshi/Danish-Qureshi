@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- -primary meta tags-->
+  <title>Danish Qureshi - Web Developer</title>
+  <meta name="title" content="Danish Qureshi - Get your product identity from me.">
+  <meta name="description"
+    content="Hi, I'm Daniish Qureshi – a BCA student and web developer. This portfolio showcases my HTML, CSS, JavaScript projects and education.">
+  <meta name="keywords"
+    content="Daniish Qureshi, web developer, BCA student, frontend developer, HTML portfolio, CSS projects, JavaScript projects, student portfolio, responsive web design">
+  <meta name="author" content="Daniish Qureshi">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://github.com/Daniish-Qureshi" />
+
+  <!-- -favicon-->
+  <link rel="shortcut icon" href="Assets/favicon.svg" type="image/svg+xml">
+
+  <!-- -google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- -custom css link-->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- -preload images-->
+  <link rel="preload" as="image" href="Assets/hero-banner.jpg">
+  <link rel="preload" as="image" href="Assets/hero-shape-1.png">
+  <link rel="preload" as="image" href="Assets/hero-shape-2.png">
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body id="top">
+
+  <!---#PRELOADER-->
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+
+  <!---#HEADER-->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="Assets/danish logo.png" width="160" height="80" alt="logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="Assets/danish logo.png" width="84" height="26" alt="logo">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Showcase</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li>
+            <a href="Education.html" class="navbar-link" data-nav-link>Education</a>
+          </li>
+          <li>
+            <a href="Project.html" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+          <li>
+            <a href="certificate.html" class="navbar-link" data-nav-link>Certificate</a>
+          </li>
+          <!---<li>
+            <a href="Achivement.html" class="navbar-link" data-nav-link>"Achievem.</a>
+          </li>---->
+          <!---<li>
+            <a href="Experience.html" class="navbar-link" data-nav-link>Exp.</a>
+          </li>---->
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn:hover">
+        <span class="span">SUBSCRBE</span>
+        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+      </a>
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+      <!---#HERO-->
+      <div class="hero text-center" id="home">
+        <div class="container">
+          <div class="banner-outline has-after">
+            <div class="hero-banner img-holder has-after" style="--width: 500; --height: 680;" data-tilt>
+              <img src="Assets/danish-modified.jpg" width="500" height="680" alt="Drew Hays" class="img-cover">
+            </div>
+            <span class="span title">Danish</span>
+          </div>
+          <div class="hero-content">
+            <h1 class="h1 title">Hii, I Am Danish Qureshi.</h1>
+            <div class="wrapper">
+              <a href="Assets/Danish Resume.pdf" download="Assets/resume danish.pdf" class="btn btn:hover">
+                <span class="span">Download CV</span>
+                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+              </a>
+              <p class="hero-text">
+                Step Into The World Of Coding With Simplified Tutorials, Real-World Projects, and Career-Focused Skills.
+              </p>
+            </div>
+          </div>
+          <img src="Assets/hero-shape-1.png" width="559" height="232" alt="shape" class="shape shape-1">
+          <img src="Assets/hero-shape-2.png" width="1358" height="497" alt="shape" class="shape shape-2">
+        </div>
+      </div>
+
+      <!---#SERVICE-->
+      <section class="service text-center" aria-label="my services" id="service">
+        <div class="container">
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="Assets/service-icon-1.svg" width="80" height="80" loading="lazy" alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="https://github.com/Daniish-Qureshi">
+                    GitHub
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="Assets/service-icon-2.svg" width="80" height="80" loading="lazy" alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="https://www.behance.net/danish-qureshi">
+                    Behance
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="Assets/service-icon-3.svg" width="80" height="80" loading="lazy" alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="https://leetcode.com/u/Danish-Qureshi/">
+                    LeetCode
+                  </a>
+                </h3>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="Assets/service-icon-4.svg" width="80" height="80" loading="lazy" alt="service icon">
+                </div>
+                <h3 class="card-title">
+                  <a href="#">
+                    Coming Soon!!!
+                  </a>
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!---#ABOUT-->
+      <section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+          <div class="tab-container">
+            <ul class="tab-btn-list">
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6 active" data-tab-btn="about">About Me</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="skillset">Skillset</button>
+              </li>
+              <!--- 
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="interview">Review</button>
+              </li>
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="awward">Education</button>
+              </li>---->
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="exhibition">Certificate</button>
+              </li>
+            </ul>
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                  <img src="Assets/feature web project.png" width="570" height="420" loading="lazy" alt="about banner"
+                    class="img-cover">
+                </figure>
+                <div class="about-content">
+                  <h2 class="h4 title section-title">
+                    I Love Web Development.
+                  </h2>
+                  <p class="section-text">
+                    Transforming ideas into reality with clean, efficient, and scalable code. Passionate about building
+                    dynamic web experiences that are fast, responsive, and user-friendly. Let's innovate together!
+                  </p>
+                  <ul class="about-list">
+                    <li class="about-item">
+                      <p class="list-title">Name</p>
+                      <span class="span title h5">Danish Qureshi</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Phone Number</p>
+                      <span class="span title h5">+91 9354602025</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Email Address</p>
+                      <span class="span title h5">danishwork29@gmail.com</span>
+                    </li>
+                    <li class="about-item">
+                      <p class="list-title">Social Network</p>
+                      <div class="social-list">
+                        <a href="https://www.facebook.com/danishsquad786" class="social-link h6"
+                          title="Facebook">FB.</a>
+                        <a href="https://www.linkedin.com/in/danishqureshi786/" class="social-link h6"
+                          title="Behance">LI.</a>
+                        <a href="https://www.instagram.com/daniish_qureshi/" class="social-link h6"
+                          title="Linkedin">IG.</a>
+                        <a href="https://twitter.com/daniish_qureshi" class="social-link h6" title="Dribbble">TW.</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+                <div class="skill-content">
+                  <h3 class="h4 title section-title">
+                    These Are the Skills I Have Learned and Currently Know.
+                  </h3>
+                  <p class="section-text">
+                    Some skills came easy, while others took time. I've grasped the basics and am continuously learning
+                    and improving.
+                  </p>
+                  <p class="section-text">
+                    What I Bring to the Table:
+                  </p>
+                  <ul class="skill-list">
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">C Language</span>
+                        <span class="value">45%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">C++ Language</span>
+                        <span class="value">35%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 35%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">HTML</span>
+                        <span class="value">90%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">CSS</span>
+                        <span class="value">50%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">JavaScript</span>
+                        <span class="value">30%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">MicroSoft-Excel</span>
+                        <span class="value">45%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">MicroSoft-Power BI</span>
+                        <span class="value">20%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 20%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">MicroSoft-Word</span>
+                        <span class="value">50%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%"></div>
+                      </div>
+                      <div class="skill-wrapper">
+                        <span class="span">MicroSoft-PowerPoint</span>
+                        <span class="value">50%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="Assets/skillset.png" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+              </div>
+            </div>
+            <div class="tab-content" data-tab-content="interview">
+              <div class="grid-list">
+
+
+                <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                  <img src="Assets/user1.jpg" width="376" height="420" loading="lazy" alt="interview 1"
+                    class="img-cover">
+
+                  <!---<button class="btn btn:hover">Play</button>--->
+                </div>
+
+                <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                  <img src="Assets/user2.jpg" width="376" height="420" loading="lazy" alt="interview 2"
+                    class="img-cover">
+
+                  <!---<button class="btn btn:hover">Play</button>--->
+                </div>
+
+                <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                  <img src="Assets/user3.jpg" width="376" height="420" loading="lazy" alt="interview 3"
+                    class="img-cover">
+
+                  <!---<button class="btn btn:hover">Play</button>--->
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab-content="awward">
+
+              <h3 class="h4 title section-title">
+                🎓 Education Details. <br>
+                <h4>
+                  🔷 10th Standard <br>
+                  📅 Year: 2021 <br>
+                  🏫 Institution: M.B. Inter College, U.P. Board <br>
+                  📍 Location: Dadri, G.B. Nagar, Uttar Pradesh - 203207 <br>
+                  📶Percentage: 79.6% <br>
+                  📘 Details: Laid the academic foundation with strong performance and discipline. <br> <br>
+                  <hr> <br>
+
+                  🔷 12th Standard (Biology) <br>
+                  📅 Year: 2023 <br>
+                  🏫 Institution: M.B. Inter College, U.P. Board <br>
+                  📍 Location: Dadri, G.B. Nagar, Uttar Pradesh - 203207 <br>
+                  📶Percentage: 66.8 <br>
+                  📘 Details: Gained deep understanding of scientific concepts with a focus on Biology. <br> <br>
+                  <hr> <br>
+
+                  🔷 Bachelor of Computer Applications (BCA) <br>
+                  📅 Batch: 2023 – 2026 <br>
+                  🏫 Institution: Vishveshwarya Group of Institutions, Greater Noida <br>
+                  📍 Location: Gautam Buddha Nagar, Uttar Pradesh - 203207 <br>
+                  📶CGPA: Coming Soon!!!<br>
+                  📞 Contact: 1800-8430-400 <br>
+                  📧 Email: admissions@vgi.ac.in <br>
+                </h4>
+
+              </h3>
+
+              <ul class="grid-list">
+
+                <!----
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 800; --height: 650;" data-tilt>
+                      <img src="Assets/education.png" width="800" height="650" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 520; --height: 330;" data-tilt>
+                      <img src="Assets/12th class.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="award-card">
+                    <figure class="card-banner img-holder" style="--width: 520; --height: 330;" data-tilt>
+                      <img src="Assets/graduation.png" width="534" height="383" loading="lazy" alt="certificate"
+                        class="img-cover">
+                    </figure>
+                  </div>
+                </li>--->
+
+              </ul>
+
+            </div>
+
+            <div class="tab-content" data-tab-content="exhibition">
+              <ul class="grid-list">
+
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 310; --height: 220;" data-tilt>
+                      <img src="Assets/Certificate Image/C Programming Certification.jpg" width="376" height="200"
+                        loading="lazy" alt="certificate" class="img-cover">
+                    </figure>
+
+                    <!---<div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>--->
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 310; --height: 220;" data-tilt>
+                      <img src="Assets/Certificate Image/C++ Certification.jpg" width="376" height="200" loading="lazy"
+                        alt="certificate" class="img-cover">
+                    </figure>
+
+                    <!---<div class="card-icon">
+                      <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+                    </div>--->
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 310; --height: 220;" data-tilt>
+                      <img src="Assets/Certificate Image/HTML Certificate.jpg" width="376" height="200" loading="lazy"
+                        alt="certificate" class="img-cover">
+                    </figure>
+
+                    <!---<div class="card-icon">
+                      <ion-icon name="logo-soundcloud" aria-hidden="true"></ion-icon>
+                    </div>--->
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 310; --height: 220;" data-tilt>
+                      <img src="Assets/Certificate Image/CSS Certification.jpg" width="376" height="200" loading="lazy"
+                        alt="certificate" class="img-cover">
+                    </figure>
+
+                    <!---<div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>--->
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 310; --height: 220;" data-tilt>
+                      <img src="Assets/Certificate Image/Javascript certification.jpg" width="376" height="200"
+                        loading="lazy" alt="certificate" class="img-cover">
+                    </figure>
+
+                    <!--<div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                    </div>--->
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="exhibition-card">
+
+                    <figure class="card-banner img-holder" style="--width: 310; --height: 220;" data-tilt>
+                      <img src="Assets/Certificate Image/skill software.jpg" width="376" height="200" loading="lazy"
+                        alt="certificate" class="img-cover">
+                    </figure>
+
+                    <!---<div class="card-icon">
+                      <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                      
+                    </div>--->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!---#CTA-->
+      <section class="section cta" aria-label="work with me">
+        <div class="container">
+
+          <h2 class="title h2 section-title text-center">
+            Let's Work Together On Your Next Project!
+          </h2>
+
+          <a href="https://www.linkedin.com/in/danishqureshi786/" class="btn btn:hover">
+            <span class="span">Hire Me Now</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+      <!---#PROJECTS-->
+      <section class="section project" aria-label="my latest projects" id="project">
+
+        <ul class="slider-list">
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="Assets/Project Image/Add Book System.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Creative & simple add book library System" class="img-cover">
+
+                <a href="https://github.com/Daniish-Qureshi/Add-Book-Library-System?tab=readme-ov-file"
+                  class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web, Project</p>
+
+                <h3 class="title h3">
+                  <a href="https://daniish-qureshi.github.io/Add-Book-Library-System/" class="card-title">Add Book
+                    Library System</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="Assets/Project Image/Image Search Engine.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: image search Engine" class="img-cover">
+
+                <a href="https://github.com/Daniish-Qureshi/Image-Search-Engine" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web, Project</p>
+
+                <h3 class="title h3">
+                  <a href="https://daniish-qureshi.github.io/Image-Search-Engine/" class="card-title">Image Search
+                    Engine</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="Assets/Project Image/calculator.png" width="1000" height="763" loading="lazy"
+                  alt="Project poster: simple and easy Calculator" class="img-cover">
+
+                <a href="https://github.com/Daniish-Qureshi/Calculator" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web, Project</p>
+
+                <h3 class="title h3">
+                  <a href="https://daniish-qureshi.github.io/Calculator/" class="card-title">Simple Calculator</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="Assets/Project Image/Netflix.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Netflix clone" class="img-cover">
+
+                <a href="https://github.com/Daniish-Qureshi/Netflix-Clone" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web, Project</p>
+
+                <h3 class="title h3">
+                  <a href="https://daniish-qureshi.github.io/Netflix-Clone/" class="card-title">Netflix-Clone</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="Assets/Project Image/pac.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Person age Calculator" class="img-cover">
+
+                <a href="https://github.com/Daniish-Qureshi/Person-Age-Calculator" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web, Project</p>
+
+                <h3 class="title h3">
+                  <a href="https://daniish-qureshi.github.io/Person-Age-Calculator/" class="card-title">Person Age
+                    Calculator</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="Assets/Project Image/more web project.png" width="1000" height="763" loading="lazy"
+                  alt="Project poster: More Web Development project" class="img-cover">
+
+                <a href="Project.html" class="btn btn:hover">
+                  <span class="span">More Project</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Web, Product</p>
+
+                <h3 class="title h3">
+                  <a href="Project.html" class="card-title">Click More Project...</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!---#TESTIMONIALS-->
+
+      <section class="section testi" aria-label="what our client says" id="review">
+        <div class="container">
+
+          <div class="testi-content">
+
+            <blockquote class="title h4 section-text">
+              &ldquo; The content on my website is specially designed for those who are just starting with coding or
+              want to take their skills to the next level. Learning here is easy, and every topic is explained with
+              simple examples. Your learning experience is sure to improve from here! &rdquo;
+            </blockquote>
+
+            <div class="profile-card">
+              <figure class="card-banner img-holder" style="--width: 70; --height: 70;">
+                <img src="Assets/owner.png" width="70" height="70" loading="lazy" alt="Daniish-Qureshi."
+                  class="img-cover">
+              </figure>
+
+              <div>
+                <p class="title h5 card-title">— Danish Qureshi.</p>
+
+                <p class="card-subtitle">Founder & Creator of this Portfolio.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!---#CONTACT-->
+      <section class="section contact" aria-label="contact me" id="contact">
+        <div class="container">
+
+          <h2 class="title h2 section-title">Get In Touch</h2>
+
+          <div class="contact-content">
+
+            <form id="contactForm" class="contact-form">
+              <input type="text" name="name" placeholder="Full name" required class="input-field">
+              <input type="email" name="email_address" placeholder="Email address" required class="input-field">
+              <input type="tel" name="phone" placeholder="Phone" class="input-field">
+              <textarea name="message" placeholder="Enter message" required class="input-field"></textarea>
+              <button type="submit" class="btn btn:hover">
+                <span class="span">Get A Quote</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+            <!-- Include EmailJS library -->
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+            <!-- Your script -->
+            <script>
+              emailjs.init("K8abN2Fdy3BLkrTEr");
+
+              document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                var formData = this;
+
+                emailjs.sendForm('service_94xc50r', 'template_0rn3as7', formData)
+                  .then(function (response) {
+                    alert('✅ Your message was sent successfully!');
+                    formData.reset();
+                  }, function (error) {
+                    alert('❌ Failed to send message. Please try again.');
+                    console.error('EmailJS Error:', error);
+                  });
+              });
+
+              // Optional: Submit via button if needed
+              document.getElementById('submitBtn').addEventListener('click', function () {
+                document.getElementById('contactForm').submit();
+              });
+            </script>
+
+
+
+
+
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28035.277253575765!2d77.55239300000004!3d28.55745890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb4e4770e023%3A0x3d9b9e01106cf495!2sDadri%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1719917148666!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <ul class="contact-list">
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="Assets/contact-icon-1.png" width="50" height="50" loading="lazy" alt="contact icon">
+                </div>
+
+                <div>
+
+                  <span class="title h6">+91 9354602025</span>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="Assets/contact-icon-2.png" width="50" height="50" loading="lazy" alt="contact icon">
+                </div>
+
+                <div>
+                  <address class="title h6">
+                    Dadri, G.B.Nagar,
+                    U.P, India - 203207
+                  </address>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="Assets/contact-icon-3.png" width="50" height="50" loading="lazy" alt="contact icon">
+                </div>
+
+                <div>
+                  <!---<span class="title h6">info@help.com</span>---->
+
+                  <span class="title h6">danishwork29@gmail.com</span>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+  <!---#FOOTER-->
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        Design By @danishqureshi - 2025
+      </p>
+
+      <a href="#top" class="back-top-btn">
+        <span class="span">Back To Top</span>
+
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+      </a>
+    </div>
+  </footer>
+
+
+  <!---#CUSTOM CURSOR-->
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+
+  <!---custom js link-->
+  <script src="script.js"></script>
+
+  <!---ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

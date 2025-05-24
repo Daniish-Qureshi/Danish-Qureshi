@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <link rel="stylesheet" href="Education.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Education</h1>
+
+    <div class="education-cards">
+      <!-- B.Tech Card -->
+      <div class="card">
+        <h2>BCA - in Computer Application</h2>
+        <div class="card-info">
+          <p><strong>University:</strong> Chaudhary Charan Singh University</p>
+          <p><strong>Duration:</strong> 2023 to 2026 | 3 Years</p>
+        </div>
+
+        <div class="semester-results">
+          <div class="semester-box">Semester 1 Result</div>
+          <img src="Assets/Education/Sem 1 Result.png" alt="Semester 1 Result" class="semester-image"
+            style="display: none;" />
+
+          <div class="semester-box">Semester 2 Result</div>
+          <img src="Assets/Education/Sem 2 Result.png" alt="Semester 2 Result" class="semester-image"
+            style="display: none;" />
+
+          <div class="semester-box">Semester 3 Result</div>
+          <img src="Assets/Education/Sem 3 Result.png" alt="Semester 1 Result" class="semester-image"
+            style="display: none;" />
+
+          <div class="semester-box">Semester 4 Result</div>
+          <img src="#" alt="Semester 2 Result" class="semester-image"
+            style="display: none;" />
+          
+          <div class="semester-box">Semester 5 Result</div>
+          <img src="#" alt="Semester 1 Result" class="semester-image"
+            style="display: none;" />
+
+          <div class="semester-box">Semester 6 Result</div>
+          <img src="#" alt="Semester 2 Result" class="semester-image"
+            style="display: none;" />
+
+          <!-- Repeat for other semesters -->
+        </div>
+
+        <div class="degree-section">
+          <h3>Degree</h3>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+
+      <!-- 12th Card -->
+      <div class="card">
+        <h2>Higher Secondary (12th)</h2>
+        <div class="card-info">
+          <p><strong>College:</strong> Mihir Bhoj Inter College</p>
+          <p><strong>Board:</strong> U.P. Board</p>
+          <p><strong>Duration:</strong> 2021 to 2022</p>
+          <p><strong>Percentage:</strong> 66%</p>
+        </div>
+        <img src="Assets/Education/Class 12th Marksheet.png" alt="12th Marksheet" class="marksheet-image" />
+      </div>
+
+      <!-- 10th Card -->
+      <div class="card">
+        <h2>Secondary (10th)</h2>
+        <div class="card-info">
+          <p><strong>College:</strong> Mihir Bhoj Inter College</p>
+          <p><strong>Board:</strong> U.P. Board</p>
+          <p><strong>Duration:</strong> 2022 to 2023</p>
+          <p><strong>Percentage:</strong> 79%</p>
+        </div>
+        <img src="Assets/Education/Class 10th Marksheet.png" alt="10th Marksheet" class="marksheet-image" />
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const semesterBoxes = document.querySelectorAll('.semester-box');
+
+    semesterBoxes.forEach((box) => {
+      box.addEventListener('click', function () {
+        const image = this.nextElementSibling;
+        if (image && image.classList.contains('semester-image')) {
+          image.style.display = (image.style.display === 'none' || image.style.display === '') ? 'block' : 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</html>

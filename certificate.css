@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+  }
+
+  body {
+    transition: background 0.3s, color 0.3s;
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  .certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .certificate-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  }
+
+  .certificate-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .certificate-info {
+    padding: 1rem;
+  }
+
+  .certificate-info h3 {
+    color: #4c8bf5;
+    margin-bottom: 0.5rem;
+  }
+
+  .certificate-info h2 {
+    color: #A4243B;
+    margin-bottom: 0.5rem;
+  }
+
+  .certificate-info p {
+    font-size: 0.9rem;
+  }
+
+  .certificate-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 0 1rem 1rem;
+    color: #aaa;
+  }
+
+  .certificate-footer a {
+    text-decoration: none;
+    color: #4c8bf5;
+    font-weight: bold;
+  }
+  
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-header {
+  margin-top: 40px;
+  text-align: center;
+}
+  
