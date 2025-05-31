@@ -1,245 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <meta name="title" content="Danish Qureshi - Get your product identity from me.">
-  <meta name="description" content="Hi, I'm Daniish Qureshi – a BCA student and web developer. This portfolio showcases my HTML, CSS, JavaScript projects and education.">
-  <meta name="keywords" content="Daniish Qureshi, web developer, BCA student, frontend developer, HTML portfolio, CSS projects, JavaScript projects, student portfolio, responsive web design">
-  <meta name="author" content="Daniish Qureshi">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://github.com/Daniish-Qureshi"/>
-  <link rel="shortcut icon" href="Assets/idea.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="project.css">
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Danish Qureshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="Assets/project.svg">
+</head>
 <body>
-    <main>
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Academic Projects</h2>
+            <h1 class="page-title">Projects</h1>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <!---<button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>-->
             </div>
+        </div>
+    </section>
 
-            <div class="achievements-grid">
-                <!-- Project 1 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/Project 1.png" alt="Project" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">3D Profile Flip Card</h3>
-                        <p class="achievement-description">The 3D Profile Flip Card is an innovative web component designed to showcase user profiles in an interactive and visually appealing manner. This project uses advanced CSS3 techniques to create a 3D flipping animation, providing a dynamic and engaging user experience. It is perfect for personal websites, portfolios, and any other platform where user profiles are featured.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS |JavaScript</span>
-                            <a href="Assets/SIDH/Web Design And Development.pdf" class="achievement-link">Project Details
-                                <a href="Assets/SIDH/Web Design And Development.pdf" class="achievement-link">Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- Project 1 - With Image -->
+                <div class="project-card fade-in" data-category="fullstack web">
+                    <div class="project-image">
+                        <img src="Assets/Project Image/Project 1.png" alt="E-Commerce Platform Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://daniish-qureshi.github.io/3D-Profile-Flip-Card/" class="project-link">Live Demo</a>
+                                <a href="https://github.com/Daniish-Qureshi/3D-Profile-Flip-Card" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>3D 3D-Profile-Flip-Card</h3>
+                        <p>The 3D Profile Flip Card is an innovative web component designed to showcase user profiles in an interactive and visually appealing manner. This project uses advanced CSS3 techniques to create a 3D flipping animation, providing a dynamic and engaging user experience. It is perfect for personal websites, portfolios, and any other platform where user profiles are featured.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/Project 2.png" alt="Project" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">D Music Player</h3>
-                        <p class="achievement-description">Welcome to D Music Player, a sleek and user-friendly music player built with HTML, CSS, and JavaScript. This project provides a smooth and enjoyable experience for listening to your favorite music tracks.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS |JavaScript</span>
-                            <a href="https://github.com/Daniish-Qureshi/D-Music-Player" class="achievement-link">Project Details
-                                <a href="https://daniish-qureshi.github.io/D-Music-Player/" class="achievement-link">Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                <!-- Project 2 - With Image -->
+                 <!--<div class="project-card fade-in" data-category="mobile">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400&text=Task+Manager+App" alt="Task Manager App Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/Add Book System.jpg" alt="Project" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Add Book Library System</h3>
-                        <p class="achievement-description">The Add Book Library System is a web application designed to manage a library's collection of books efficiently. It provides features for librarians to add, edit, and delete books from the library database, as well as for users to search for books by various criteria.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS |JavaScript</span>
-                            <a href="https://github.com/Daniish-Qureshi/Add-Book-Library-System" class="achievement-link">Project Details
-                                <a href="https://daniish-qureshi.github.io/Add-Book-Library-System/" class="achievement-link">Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                    <div class="project-info">
+                        <h3>Task Management Mobile App</h3>
+                        <p>A collaborative task management application with real-time updates, team collaboration features, and offline functionality.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">PWA</span>
                         </div>
                     </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/project 3.png" alt="Project" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Contact UI Form</h3>
-                        <p class="achievement-description">The Contact UI Form project showcases a modern and user-friendly contact form interface. This form is designed to provide a seamless experience for users to input their contact information. It is ideal for integrating into websites to collect visitor inquiries, feedback, or any other type of information.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS</span>
-                            <a href="https://github.com/Daniish-Qureshi/Contact-UI-Form?tab=readme-ov-file" class="achievement-link">Project Details
-                                <a href="https://daniish-qureshi.github.io/Contact-UI-Form/" class="achievement-link">Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/Demo.png" alt="Project" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Login Form 2</h3>
-                        <p class="achievement-description">A simple and responsive login form built using HTML & CSS only. This project is designed to be clean and minimalistic while ensuring a smooth user experience on different screen sizes.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS</span>
-                            <a href="https://github.com/Daniish-Qureshi/Login-Form-2?tab=readme-ov-file" class="achievement-link">Project Details
-                                <a href="https://daniish-qureshi.github.io/Login-Form-2/" class="achievement-link">Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/credit card design.png" alt="Project" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Credit Card Design</h3>
-                        <p class="achievement-description">This project showcases a sleek and professional credit card design. It features a responsive layout that adjusts smoothly to different screen sizes, making it ideal for use in various web applications and projects. The design is fully customizable, allowing easy modifications to fit different themes or styles.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS</span>
-                            <a href="https://github.com/Daniish-Qureshi/Credit-Card-Design" class="achievement-link">Project Details
-                                <a href="https://daniish-qureshi.github.io/Credit-Card-Design/" class="achievement-link">Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="achievement-card">
-                    <img src="Assets/Project Image/pag.png" alt="Great Learning" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Person Age Calculator</h3>
-                        <p class="achievement-description">The Person Age Calculator is a simple yet practical web-based tool designed to calculate a person's age accurately based on their date of birth. Built using HTML, CSS, and JavaScript, this project takes user input in the form of a birth date and instantly displays the age in years, months, and days. It focuses on enhancing user interaction through a clean and responsive interface, while also improving JavaScript skills such as date manipulation, form validation, and real-time output generation. Ideal for beginners, this project showcases how basic frontend technologies can be combined to create a functional and user-friendly application.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS |JavaScript</span>
-                            <a href="https://github.com/Daniish-Qureshi/Person-Age-Calculator" class="achievement-link">
-                                Project Details
-                                 <a href="https://daniish-qureshi.github.io/Person-Age-Calculator/" class="achievement-link">
-                                Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Project 8 
-                   <div class="achievement-card">
-                    <img src="Assets/Project Image/pag.png" alt="Great Learning" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Person Age Calculator</h3>
-                        <p class="achievement-description">The Person Age Calculator is a simple yet practical web-based tool designed to calculate a person's age accurately based on their date of birth. Built using HTML, CSS, and JavaScript, this project takes user input in the form of a birth date and instantly displays the age in years, months, and days. It focuses on enhancing user interaction through a clean and responsive interface, while also improving JavaScript skills such as date manipulation, form validation, and real-time output generation. Ideal for beginners, this project showcases how basic frontend technologies can be combined to create a functional and user-friendly application.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">HTML |CSS |JavaScript</span>
-                            <a href="https://github.com/Daniish-Qureshi/Person-Age-Calculator" class="achievement-link">
-                                Project Details
-                                 <a href="https://daniish-qureshi.github.io/Person-Age-Calculator/" class="achievement-link">
-                                Live
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                 
-                 -->
-
-                <!-- Achievement 3 
-                 
-                <div class="achievement-card">
-                    <img src="Assets/Basic Computer Course.jpeg" alt="STP Computer Education" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Basic Computer Course</h3>
-                        <p class="achievement-description">Basic Computer Course certification covering fundamental skills in MS Office, Internet, typing, and essential software operations.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">14th December, 2023</span>
-                            <a href="Assets/STP Com. Edu/Basic Computer Certificate.pdf" class="achievement-link">
-                                View Certificate
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                -->
+                </div>--->
                 
 
-                <!-- Achievement 4 
-                <div class="achievement-card">
-                    <img src="Assets/CSS Course.jpg" alt="STP Computer Education" class="achievement-image">
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">CSS</h3>
-                        <p class="achievement-description">CSS certification showcasing expertise in styling, layouts, animations, and responsive web design for modern websites.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">26th Septmber, 2023</span>
-                            <a href="Assets/STP Com. Edu/CSS Certificate.pdf" class="achievement-link">
-                                View Certificate
-                                <svg class="achievement-link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+                <!-- Project 3 - With Image -->
+                 <!--<div class="project-card fade-in" data-category="design web">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400&text=Portfolio+Website" alt="Portfolio Website Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
                         </div>
                     </div>
-                </div> 
+                    <div class="project-info">
+                        <h3>Creative Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website featuring smooth animations, dark mode toggle, and optimized performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                    </div>
+                </div>--->
                 
-                -->
+
+                <!-- Project 4 - With Image -->
+                 <!--<div class="project-card fade-in" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400&text=Social+Media+Dashboard" alt="Social Media Dashboard Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Analytics Dashboard</h3>
+                        <p>A comprehensive dashboard for social media analytics with real-time data visualization and reporting features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>--->
+                
+
+                <!-- Project 5 - With Image -->
+                 <!--<div class="project-card fade-in" data-category="web design">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400&text=Restaurant+Website" alt="Restaurant Website Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Booking System</h3>
+                        <p>A beautiful restaurant website with online reservation system, menu management, and customer reviews.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>--->
+                
+
+                <!-- Project 6 - With Image -->
+                 <!--<div class="project-card fade-in" data-category="mobile">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400&text=Fitness+Tracker" alt="Fitness Tracker App Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracking App</h3>
+                        <p>A comprehensive fitness tracking application with workout plans, progress tracking, and social features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Health Kit</span>
+                        </div>
+                    </div>
+                </div>--->
                 
             </div>
         </div>
-    </main>
-
+    </section>
+    
     <script src="project.js"></script>
 </body>
 </html>
