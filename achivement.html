@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Qureshi | Achievements</title>
+    <link rel="stylesheet" href="achivement.css">
+    <link rel="icon" href="Assets/achivement new.svg">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="title">Achievements</h1>
+        
+        <!-- Statistics -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" data-target="5">5</div>
+                <div class="stat-label">Total Achievements</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="2">2</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Skills Gained</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="Search achievements..." id="searchInput">
+        </div>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="internship">Internships</button>
+            <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+            <button class="filter-btn" data-filter="contribution">Contributions</button>
+            <button class="filter-btn" data-filter="academic">Academic</button>
+        </div>
+        
+        <div class="view-toggle">
+            <button class="view-btn active" data-view="timeline">📋</button>
+            <button class="view-btn" data-view="grid">⊞</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="timeline" id="achievementsContainer">
+
+            <!-- Achievements 1 -->
+            <div class="achievement" data-category="internship" data-id="1">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">💻</div>
+                        <div class="achievement-info">
+                            <h3>Introduction to Cloud Job Simulation</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🏢 Accenture (via Forage) — Virtual Experience</span>
+                                <span class="meta-item">📅 May 2025</span>
+                                <span class="meta-item">🌐 Home</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-internship">Virtual Internship</div>
+                </div>
+                <p class="achievement-description">
+                    Completed a virtual internship with Accenture’s Technology Consulting Job Simulation, focusing on client collaboration and agile project management. Gained hands-on experience in requirement gathering, application design, and creating user stories to drive project success.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>Conducted project kickoff and gathered detailed client requirements</li>
+                        <li>Designed a user-friendly voting application with real-world use case</li>
+                        <li>Created Agile user stories to streamline development tasks</li>
+                        <li>Collaborated effectively with virtual teams to simulate a consulting environment</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Google Sheet</span>
+                    <span class="skill-tag">Pdf</span>
+                    <span class="skill-tag">Chart</span>
+                </div>
+            </div>
+
+            <!-- Achievements 2 -->
+            <div class="achievement" data-category="internship" data-id="1">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">💻</div>
+                        <div class="achievement-info">
+                            <h3>Introduction to Cloud Job Simulation</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🏢 Datacom (via Forage) — Virtual Experience</span>
+                                <span class="meta-item">📅 May 2025</span>
+                                <span class="meta-item">🌐 Home</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-internship">Virtual Internship</div>
+                </div>
+                <p class="achievement-description">
+                    Completed a virtual internship with Datacom focusing on foundational cloud operations. Developed practical skills in deploying cloud applications and automating workflows using modern DevOps tools.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>Registered and deployed a cloud-based application successfully</li>
+                        <li>Created and configured GitHub Actions workflows for CI/CD automation</li>
+                        <li>Gained practical understanding of cloud environment setup and management</li>
+                        <li>Explored integration between cloud services and version control systems</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Google Sheet</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">MS Azur</span>
+                    <span class="skill-tag">AWS</span>
+                </div>
+            </div>
+
+            <!-- Achievements 3 -->
+            <div class="achievement" data-category="academic" data-id="1">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">🎯</div>
+                        <div class="achievement-info">
+                            <h3>20+ Web Development Project on GitHub</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🏢 Self-Made</span>
+                                <span class="meta-item">📅 Start 2024</span>
+                                <span class="meta-item">🌐 Home</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-academic">Academic</div>
+                </div>
+                <p class="achievement-description">
+                    I have successfully completed over 20 diverse projects, showcasing my skills in web development, problem-solving, and innovative thinking. These projects reflect my passion for coding and continuous learning, ranging from simple web pages to complex applications.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>Developed projects using HTML, CSS, and JavaScript with clean and responsive designs.</li>
+                        <li>Implemented real-world functionalities like user authentication, data handling, and dynamic content.</li>
+                        <li>Focused on code quality, optimization, and user-friendly interfaces.</li>
+                        <li>Demonstrated ability to work independently and manage multiple projects simultaneously.</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">API-Key</span>
+                </div>
+            </div>
+
+            <!-- Achievements 4 -->
+            <div class="achievement" data-category="academic" data-id="4">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">🎓</div>
+                        <div class="achievement-info">
+                            <h3>Ranked 5th in Class</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🏫 Vishveshwarya Group of Institutions</span>
+                                <span class="meta-item">📅 08 Aprial 2025</span>
+                                <span class="meta-item">📍 Noida, Uttar Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-academic">Academic</div>
+                </div>
+                <p class="achievement-description">
+                    Achieved 5th rank in the class by maintaining strong academic performance and dedication throughout the year.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>Demonstrated consistency and dedication across all subjects</li>
+                        <li>Scalable microservices architecture</li>
+                        <li>Balanced academics alongside project work and internships</li>
+                        <li>Recognized by faculty for strong subject knowledge and discipline</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">Object-Oriented Programming using C++</span>
+                     <span class="skill-tag">Data Structures using C & C++</span>
+                    <span class="skill-tag">Computer Architecture & Assembly Language</span>
+                    <span class="skill-tag">Business Economics</span>
+                    <span class="skill-tag">Elements of Statistics</span>
+                    <span class="skill-tag">Programming Lab (C++ & Data Structures)</span>
+                </div>
+            </div>
+
+            <!-- Achievements 5 -->
+            <div class="achievement" data-category="academic" data-id="4">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">💻</div>
+                        <div class="achievement-info">
+                            <h3>4th Class Topper</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🏫 Tagore Public Junior High School</span>
+                                <span class="meta-item">📅 Feburary 2014</span>
+                                <span class="meta-item">📍 Dadri, G.B.Nagar, Uttar Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-academic">Academic</div>
+                </div>
+                <p class="achievement-description">
+                    Consistently demonstrated academic excellence from an early age by securing the top position in 4th grade, reflecting a strong foundation of discipline, focus, and dedication.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>Achieved first position in 4th class among all classmates.</li>
+                        <li>Showed early commitment to learning and excellence.</li>
+                        <li>Built a strong foundation for consistent academic performance.</li>
+                        <li>Developed discipline and focus that continues to drive success.</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">Hindi</span>
+                    <span class="skill-tag">English</span>
+                    <span class="skill-tag">Maths</span>
+                    <span class="skill-tag">Science</span>
+                    <span class="skill-tag">Social Science</span>
+                    <span class="skill-tag">Sanskrit</span>
+                    <span class="skill-tag">Urdu</span>
+                    <span class="skill-tag">G.K.</span>
+                    <span class="skill-tag">Drawing</span>
+                </div>
+            </div>
+
+            <!-- A2 <div class="achievement" data-category="hackathon" data-id="2">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">🏆</div>
+                        <div class="achievement-info">
+                            <h3>Winner - Web Development Hackathon</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🎪 DevFest 2023</span>
+                                <span class="meta-item">📅 November 2023</span>
+                                <span class="meta-item">📍 Mumbai, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-hackathon">Hackathon</div>
+                </div>
+                <p class="achievement-description">
+                    Led a team of 4 developers to create an innovative e-learning platform in 48 hours. Implemented real-time features and modern UI/UX design.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>First place out of 50+ teams</li>
+                        <li>Built full-stack application</li>
+                        <li>Implemented real-time features</li>
+                        <li>Led team coordination and strategy</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Socket.io</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Leadership</span>
+                </div>
+            </div>-->
+
+            <!-- A2 <div class="achievement" data-category="contribution" data-id="3">
+                <div class="achievement-header">
+                    <div class="achievement-left">
+                        <div class="achievement-icon">🔧</div>
+                        <div class="achievement-info">
+                            <h3>Open Source Contributor</h3>
+                            <div class="achievement-meta">
+                                <span class="meta-item">🌟 React Community</span>
+                                <span class="meta-item">📅 Ongoing since 2022</span>
+                                <span class="meta-item">🌍 Global</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-tag tag-contribution">Contribution</div>
+                </div>
+                <p class="achievement-description">
+                    Active contributor to various React and Next.js open source projects. Maintained popular packages and helped improve developer experience.
+                </p>
+                <div class="key-highlights">
+                    <h4>🎯 Key Highlights:</h4>
+                    <ul class="highlights-list">
+                        <li>50+ merged pull requests</li>
+                        <li>1000+ GitHub stars earned</li>
+                        <li>Maintained 3 popular packages</li>
+                        <li>Helped 100+ developers in community</li>
+                    </ul>
+                </div>
+                <div class="skills-tags">
+                    <span class="skill-tag">Open Source</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Documentation</span>
+                    <span class="skill-tag">Community</span>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="achievementModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="mobile-nav-btn active" data-action="all">
+            🏠
+            <span class="mobile-nav-label">All</span>
+        </button>
+        <button class="mobile-nav-btn" data-action="internship">
+            💻
+            <span class="mobile-nav-label">Internships</span>
+        </button>
+        <button class="mobile-nav-btn" data-action="hackathon">
+            🏆
+            <span class="mobile-nav-label">Hackathons</span>
+        </button>
+        <button class="mobile-nav-btn" data-action="contribution">
+            🔧
+            <span class="mobile-nav-label">Contributions</span>
+        </button>
+        <button class="mobile-nav-btn" data-action="academic">
+            🎓
+            <span class="mobile-nav-label">Academic</span>
+        </button>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab" id="scrollToTop" title="Scroll to top">↑</button>
+
+    <script src="achivement.js"></script>
+</body>
+</html>

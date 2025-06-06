@@ -697,6 +697,24 @@
     font-family: var(--fontFamily-recoleta);
     font-weight: var(--weight-medium);
   }
+
+  .view-full-skill-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #00d4ff;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.view-full-skill-btn:hover {
+  background-color: #00b0d4;
+  transform: scale(1.05);
+}
+
   
   .progress-bar {
     background-color: var(--bg-smoky-black);
