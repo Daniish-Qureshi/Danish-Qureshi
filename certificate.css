@@ -46,12 +46,35 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px var(--shadow-light);
+  /* Make sure the certificate-header and certificate-content don't overlap the image */
+  position: relative; /* Added for proper positioning of image container */
 }
 
 .certificate-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 40px var(--shadow-medium);
 }
+
+/* NAYA: Certificate Image Container Styling */
+.certificate-image-container {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fallback background for images */
+}
+
+.certificate-full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make sure the image covers the container without distortion */
+    display: block;
+}
+
 
 .certificate-header {
   background: var(--bg-primary);
@@ -75,11 +98,10 @@ body {
 }
 
 .certificate-logo-img {
-    width: 45px;
-    height: auto;
-    border-radius: 12px;
+  width: 45px;
+  height: auto;
+  border-radius: 12px;
 }
-
 
 .certificate-badge {
   background: #28a745;
@@ -180,7 +202,14 @@ body {
 }
 
 /* Stats Section */
-
+.stats-section {
+  padding: 4rem 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: 2rem;
+  padding: 2.5rem;
+  border-radius: 12px;
+}
 
 .stats-grid {
   display: grid;
@@ -189,59 +218,59 @@ body {
 }
 
 .stat-item {
-    text-align: center;
-    padding: 2.5rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.02); /* Glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .stat-item::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.05), transparent 70%);
-    animation: rotateGlow 8s linear infinite;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.05), transparent 70%);
+  animation: rotateGlow 8s linear infinite;
+  z-index: 0;
 }
 
 @keyframes rotateGlow {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .stat-number {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #00eaff;
-    text-shadow: 0 0 10px #00eaff80;
-    z-index: 1;
-    position: relative;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff80;
+  z-index: 1;
+  position: relative;
 }
 
 .stat-label {
-    color: var(--text-secondary);
-    font-weight: 600;
-    font-size: 1.1rem;
-    z-index: 1;
-    position: relative;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  z-index: 1;
+  position: relative;
 }
 
 .stat-item:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
 }
 
 /* Responsive Design */

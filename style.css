@@ -702,18 +702,31 @@
   display: inline-block;
   margin-top: 30px;
   padding: 12px 25px;
-  background-color: #00d4ff;
-  color: #000;
+  background-color: #011627;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.view-full-skill-btn:hover {
-  background-color: #00b0d4;
-  transform: scale(1.05);
+.skill-summary-footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
+
+.view-full-skill-btn2 {
+  padding: 12px 25px;
+  background-color: #011627;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
 
   
   .progress-bar {

@@ -206,6 +206,8 @@
         .tools .skill-card:nth-child(10) .skill-icon { color: #F42B03; } /* firebase */
         .tools .skill-card:nth-child(11) .skill-icon { color: #E89005; } /* leetcode */
         .tools .skill-card:nth-child(12) .skill-icon { color: #3772FF; } /* canva */
+        .tools .skill-card:nth-child(13) .skill-icon { color: #2EC866; } /* leetcode */
+        .tools .skill-card:nth-child(14) .skill-icon { color: #5B4638; } /* canva */
         
         /* Libraries Colors */
         .libraries .skill-card:nth-child(1) .skill-icon { color: #764abc; } /* Redux */
