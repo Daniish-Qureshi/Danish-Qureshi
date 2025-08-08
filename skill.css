@@ -196,18 +196,19 @@
         /* Tools Colors */
         .tools .skill-card:nth-child(1) .skill-icon { color: #f05032; } /* Git */
         .tools .skill-card:nth-child(2) .skill-icon { color: #0D1317; } /* Github */
-        .tools .skill-card:nth-child(3) .skill-icon { color: #FE5F55; } /* GitLab */
-        .tools .skill-card:nth-child(4) .skill-icon { color: #007acc; } /* VS Code */
-        .tools .skill-card:nth-child(5) .skill-icon { color: #006CB7; } /* Turbo C */
-        .tools .skill-card:nth-child(6) .skill-icon { color: #006CB7; } /* Code::Blocks */
-        .tools .skill-card:nth-child(7) .skill-icon { color: #000000; } /* AWS */
-        .tools .skill-card:nth-child(8) .skill-icon { color: #00C7B7; } /* Netlify*/
-        .tools .skill-card:nth-child(9) .skill-icon { color: #0D1317; } /* Codepen */
-        .tools .skill-card:nth-child(10) .skill-icon { color: #F42B03; } /* firebase */
-        .tools .skill-card:nth-child(11) .skill-icon { color: #E89005; } /* leetcode */
-        .tools .skill-card:nth-child(12) .skill-icon { color: #3772FF; } /* canva */
-        .tools .skill-card:nth-child(13) .skill-icon { color: #2EC866; } /* leetcode */
-        .tools .skill-card:nth-child(14) .skill-icon { color: #5B4638; } /* canva */
+        .tools .skill-card:nth-child(4) .skill-icon { color: #0D1317; } /* Vercel */
+        .tools .skill-card:nth-child(0) .skill-icon { color: #FE5F55; } /* GitLab */
+        .tools .skill-card:nth-child(3) .skill-icon { color: #007acc; } /* VS Code */
+        .tools .skill-card:nth-child(0) .skill-icon { color: #006CB7; } /* Turbo C */
+        .tools .skill-card:nth-child(0) .skill-icon { color: #006CB7; } /* Code::Blocks */
+        .tools .skill-card:nth-child(0) .skill-icon { color: #000000; } /* AWS */
+        .tools .skill-card:nth-child(0) .skill-icon { color: #00C7B7; } /* Netlify*/
+        .tools .skill-card:nth-child(5) .skill-icon { color: #0D1317; } /* Codepen */
+        .tools .skill-card:nth-child(6) .skill-icon { color: #F42B03; } /* firebase */
+        .tools .skill-card:nth-child(7) .skill-icon { color: #E89005; } /* leetcode */
+        .tools .skill-card:nth-child(0) .skill-icon { color: #3772FF; } /* canva */
+        .tools .skill-card:nth-child(8) .skill-icon { color: #2EC866; } /* leetcode */
+        .tools .skill-card:nth-child(9) .skill-icon { color: #5B4638; } /* CodeChef */
         
         /* Libraries Colors */
         .libraries .skill-card:nth-child(1) .skill-icon { color: #764abc; } /* Redux */

@@ -6,43 +6,81 @@
     <title>Certificates - Danish Qureshi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="certificate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="Assets/certificate svg.svg">
 </head>
-
 <body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <h1 class="page-title">Certificates & Credentials</h1>
-            <p class="page-subtitle">Verified Certifications That Showcase My Skills</p>
+            <p class="page-subtitle">Verified Certifications That Showcase My Skills & Expertise</p>
         </div>
     </section>
 
+    <!-- Statistics Section <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalCertificates">0</div>
+                    <div class="stat-label">Total Certificates</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="thisYearCertificates">0</div>
+                    <div class="stat-label">This Year</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="verifiedCertificates">0</div>
+                    <div class="stat-label">Verified</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="skillDomains">0</div>
+                    <div class="stat-label">Skill Domains</div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    
+
+    <!-- Filter Section -->
     <section class="filter-section">
         <div class="container">
+            <!--<div class="search-container">
+                <div class="search-icon">🔍</div>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search certificates, skills, or organizations...">
+            </div>---->
+            
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All Certificates</button>
                 <button class="filter-btn" data-filter="cloud">Cloud Computing</button>
                 <button class="filter-btn" data-filter="programming">Programming</button>
                 <button class="filter-btn" data-filter="development">Web Development</button>
                 <button class="filter-btn" data-filter="office">Office Software</button>
-                <button class="filter-btn" data-filter="intership">Intership</button>
+                <button class="filter-btn" data-filter="intership">Internship</button>
             </div>
         </div>
     </section>
 
+    <!-- Certificates Section -->
     <section class="certificates-section">
         <div class="container">
             <div class="certificates-grid" id="certificates-grid">
-
-                <div class="certificate-card fade-in" data-category="cloud">
+                
+                <!-- AWS Foundation Certificate -->
+                <div class="certificate-card" data-category="cloud" data-date="2024-12-01" data-search="aws foundation cloud essentials amazon web services ec2 s3 cloudformation">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/AWS Foundations.png" alt="AWS Foundation Certificate" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=AWS+Foundation+Certificate" alt="AWS Foundation Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/AWS.png" alt="AWS Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=AWS" alt="AWS Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
@@ -50,31 +88,30 @@
                         <p class="certificate-issuer">Amazon Web Services</p>
                         <p class="certificate-date">Issued: December 2024</p>
                         <p class="certificate-description">
-                            This certificate introduces the fundamental concepts of cloud computing using Amazon Web
-                            Services (AWS). It covers core AWS services, basic cloud architecture, and the benefits of
-                            adopting cloud technologies, making it ideal for beginners starting their cloud journey.
+                            This certificate introduces the fundamental concepts of cloud computing using Amazon Web Services (AWS). It covers core AWS services, basic cloud architecture, and the benefits of adopting cloud technologies.
                         </p>
                         <div class="certificate-skills">
                             <span class="skill-tag">AWS EC2</span>
                             <span class="skill-tag">S3</span>
-                            <span class="skill-tag">AWS global infrastructure</span>
+                            <span class="skill-tag">AWS Infrastructure</span>
                             <span class="skill-tag">CloudFormation</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/AWS/482_3_6828287_1734883804_AWS Course Completion Certificate.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="#" class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in" data-category="cloud">
+                <!-- Cloud Essentials Badge -->
+                <div class="certificate-card" data-category="cloud" data-date="2024-01-15" data-search="cloud essentials badge aws amazon web services ec2 s3 iam tco">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/Cloud Essentials.png" alt="AWS Cloud Essentials Badge Certificate" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=Cloud+Essentials+Badge" alt="Cloud Essentials Badge" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/AWS.png" alt="AWS Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=AWS" alt="AWS Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
@@ -82,31 +119,30 @@
                         <p class="certificate-issuer">Amazon Web Services</p>
                         <p class="certificate-date">Issued: January 2024</p>
                         <p class="certificate-description">
-                            This badge validates foundational knowledge of cloud computing concepts, AWS core services,
-                            cloud architecture principles, and cloud value propositions. It demonstrates readiness to
-                            explore further cloud learning paths and certifications.
+                            This badge validates foundational knowledge of cloud computing concepts, AWS core services, cloud architecture principles, and cloud value propositions.
                         </p>
                         <div class="certificate-skills">
-                            <span class="skill-tag">Cloud computing fundamentals</span>
-                            <span class="skill-tag">AWS global infrastructure</span>
+                            <span class="skill-tag">Cloud Fundamentals</span>
+                            <span class="skill-tag">AWS Infrastructure</span>
                             <span class="skill-tag">EC2, S3, IAM</span>
-                            <span class="skill-tag">TCO </span>
+                            <span class="skill-tag">TCO</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/AWS/15782_3_6828287_1734700420_AWS Course Completion Certificate.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="#" class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in" data-category="office">
+                <!-- Microsoft Excel Certificate -->
+                <div class="certificate-card" data-category="office" data-date="2024-10-20" data-search="microsoft excel coursera spreadsheet data analysis formulas charts">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/Introduction to ms excel.png" alt="Introduction to Microsoft Excel Certificate" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=Microsoft+Excel+Certificate" alt="Microsoft Excel Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/Coursera.png" alt="Coursera Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=Coursera" alt="Coursera Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
@@ -114,32 +150,30 @@
                         <p class="certificate-issuer">Coursera</p>
                         <p class="certificate-date">Issued: October 20, 2024</p>
                         <p class="certificate-description">
-                            Getting Started with Microsoft Excel introduces the essential tools and functionalities of
-                            Excel for organizing, analyzing, and visualizing data. This course is ideal for beginners
-                            who want to build a strong foundation in spreadsheets and basic data manipulation.
+                            Getting Started with Microsoft Excel introduces the essential tools and functionalities of Excel for organizing, analyzing, and visualizing data.
                         </p>
                         <div class="certificate-skills">
-                            <span class="skill-tag">Basic spreadsheet navigation and formatting</span>
-                            <span class="skill-tag">Data entry, formulas, and cell referencing</span>
-                            <span class="skill-tag">Using functions like SUM, AVERAGE, IF, etc.</span>
-                            <span class="skill-tag">Creating simple charts and visualizations</span>
+                            <span class="skill-tag">Spreadsheet Navigation</span>
+                            <span class="skill-tag">Data Entry</span>
+                            <span class="skill-tag">Excel Functions</span>
+                            <span class="skill-tag">Charts</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/Couresra/Coursera X3HDVHEWOI3V.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/X3HDVHEWOI3V"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in" data-category="office">
+                <!-- Data Analysis Excel Certificate -->
+                <div class="certificate-card" data-category="office" data-date="2023-10-19" data-search="data analysis microsoft excel coursera pivot tables data mining spreadsheet">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/introduction to data analysis.png" alt="Introduction to Data Analysis using Microsoft Excel Certificate" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=Data+Analysis+Excel" alt="Data Analysis Excel Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/Coursera.png" alt="Coursera Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=Coursera" alt="Coursera Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
@@ -147,35 +181,30 @@
                         <p class="certificate-issuer">Coursera</p>
                         <p class="certificate-date">Issued: October 19, 2023</p>
                         <p class="certificate-description">
-                            Introduction to Data Analysis using Microsoft Excel explores how to use Excel’s powerful
-                            tools to clean, analyze, and visualize data. This course helps learners gain analytical
-                            thinking skills through hands-on exercises using real-world datasets.
+                            Introduction to Data Analysis using Microsoft Excel explores how to use Excel's powerful tools to clean, analyze, and visualize data.
                         </p>
                         <div class="certificate-skills">
-                            <span class="skill-tag">Spreadsheet Software</span>
                             <span class="skill-tag">Data Analysis</span>
                             <span class="skill-tag">Data Manipulation</span>
-                            <span class="skill-tag">Data Mining</span>
-                            <span class="skill-tag">Pivot Tables And Charts</span>
+                            <span class="skill-tag">Pivot Tables</span>
                             <span class="skill-tag">Excel Formulas</span>
-                            <span class="skill-tag">Microsoft Excel</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/Couresra/Coursera PS6XLCEBO9ZT.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/PS6XLCEBO9ZT"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in" data-category="programming">
+                <!-- C Programming Certificate -->
+                <div class="certificate-card" data-category="programming" data-date="2024-10-08" data-search="c programming infosys springboard variables functions arrays pointers">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/C Programming Certification.jpg" alt="c programming course" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=C+Programming+Certificate" alt="C Programming Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/infosys.jpg" alt="Coursera Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=Infosys" alt="Infosys Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
@@ -183,35 +212,30 @@
                         <p class="certificate-issuer">Infosys Springboard</p>
                         <p class="certificate-date">Issued: October 08, 2024</p>
                         <p class="certificate-description">
-                            I have successfully completed a comprehensive course on C Programming Language, which covered the foundational concepts of programming, syntax, and logical problem-solving. The course included hands-on practice in variables, data types, operators, control structures (if-else, loops), functions, arrays, strings, pointers, structures, file handling, and basic data structures like stacks and queues.
-
-                            Through this course, I gained strong problem-solving skills, learned to write efficient code, and built a solid foundation for learning advanced languages like C++ and Java. This course also helped me understand the internal workings of memory management and algorithm optimization.
+                            Successfully completed a comprehensive course on C Programming Language, covering foundational concepts of programming, syntax, and logical problem-solving.
                         </p>
                         <div class="certificate-skills">
-                            <span class="skill-tag">Variables and Data Types</span>
-                            <span class="skill-tag">Operators and Expressions</span>
-                            <span class="skill-tag">Conditional Statements (if, if-else, switch)</span>
-                            <span class="skill-tag">Looping Constructs (for, while, do-while)</span>
-                            <span class="skill-tag">Functions and Recursion</span>
-                            <span class="skill-tag">Arrays (1D & 2D)</span>
-                            <span class="skill-tag">Strings and String Functions</span>
+                            <span class="skill-tag">Variables & Data Types</span>
+                            <span class="skill-tag">Control Structures</span>
+                            <span class="skill-tag">Functions</span>
+                            <span class="skill-tag">Arrays & Pointers</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/Infosys/C Programming Course.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01384323703937433634517_shared/1-24186848-4716-4344-af37-baafa7d63886.pdf"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in" data-category="programming">
+                <!-- C++ Programming Certificate -->
+                <div class="certificate-card" data-category="programming" data-date="2024-08-10" data-search="cpp c++ programming simplilearn oop classes objects inheritance polymorphism">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/Cpp Certification.jpg" alt="Cpp programming course" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=C%2B%2B+Programming" alt="C++ Programming Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/simplilearn.jpg" alt="Coursera Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=Simplilearn" alt="Simplilearn Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
@@ -219,210 +243,206 @@
                         <p class="certificate-issuer">simplilearn by SkillUP</p>
                         <p class="certificate-date">Issued: August 10, 2024</p>
                         <p class="certificate-description">
-                           Successfully completed a comprehensive course in C++ Programming, gaining in-depth knowledge of core programming concepts such as variables, loops, functions, arrays, pointers, object-oriented programming (OOP), classes & objects, inheritance, polymorphism, file handling, and exception handling.
-                           The course also involved solving real-world problems and hands-on coding challenges, which helped strengthen logical thinking, debugging, and algorithmic skills.
-
-
+                            Successfully completed a comprehensive course in C++ Programming, gaining in-depth knowledge of core programming concepts and object-oriented programming.
                         </p>
                         <div class="certificate-skills">
-                            <span class="skill-tag">Object-Oriented Programming (OOP)</span>
-                            <span class="skill-tag">Classes and Objects</span>
-                            <span class="skill-tag">Inheritance & Polymorphism</span>
-                            <span class="skill-tag">STL (Standard Template Library)</span>
-                            <span class="skill-tag">Functions and Recursion</span>
-                            <span class="skill-tag">Pointers & Memory Management</span>
-                            <span class="skill-tag">Algorithms & Logic Building</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">Classes & Objects</span>
+                            <span class="skill-tag">Inheritance</span>
+                            <span class="skill-tag">STL</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/Simplilearn/Advance C++.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://certificates.simplicdn.net/share/7207847_1723264791.pdf"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-                
-                <div class="certificate-card fade-in" data-category="programming">
+                <!-- Advanced C++ Certificate -->
+                <div class="certificate-card" data-category="programming" data-date="2024-12-10" data-search="advanced cpp c++ iit bombay spoken tutorial oop inheritance polymorphism stl">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/Advance cpp Spoken Tutorial.png" alt="Cpp programming course" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=Advanced+C%2B%2B" alt="Advanced C++ Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/spoken tutorial.jpg" alt="Coursera Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=IIT" alt="IIT Bombay Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
-                        <h3>Avance Cpp</h3>
+                        <h3>Advanced C++</h3>
                         <p class="certificate-issuer">Spoken Tutorial, IIT Bombay</p>
-                        <p class="certificate-date">Issued: December 10th, 2024</p>
+                        <p class="certificate-date">Issued: December 10, 2024</p>
                         <p class="certificate-description">
-                           Successfully completed a comprehensive course in Advance Cpp, gaining in-depth knowledge of core programming concepts such as variables, loops, functions, arrays, pointers, object-oriented programming (OOP), classes & objects, inheritance, polymorphism, file handling, and exception handling.
-                           The course also involved solving real-world problems and hands-on coding challenges, which helped strengthen logical thinking, debugging, and algorithmic skills.
-
-
+                            Successfully completed a comprehensive course in Advanced C++, gaining in-depth knowledge of advanced programming concepts and object-oriented programming.
                         </p>
                         <div class="certificate-skills">
-                            <span class="skill-tag">Object-Oriented Programming (OOP)</span>
-                            <span class="skill-tag">Classes and Objects</span>
-                            <span class="skill-tag">Inheritance & Polymorphism</span>
-                            <span class="skill-tag">STL (Standard Template Library)</span>
-                            <span class="skill-tag">Functions and Recursion</span>
-                            <span class="skill-tag">Pointers & Memory Management</span>
-                            <span class="skill-tag">Algorithms & Logic Building</span>
+                            <span class="skill-tag">Advanced OOP</span>
+                            <span class="skill-tag">Templates</span>
+                            <span class="skill-tag">STL</span>
+                            <span class="skill-tag">Memory Management</span>
                         </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/IIT Bombay/Advance cpp.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://spoken-tutorial.org/software-training/test/participant/certificate/124383/3859121/"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
-                
 
-
-                <div class="certificate-card fade-in" data-category="intership">
+                <!-- Accenture Internship -->
+                <div class="certificate-card" data-category="intership" data-date="2025-05-20" data-search="accenture technology consulting internship forage job simulation business analysis">
                     <div class="certificate-image-container">
-                        <img src="Assets/Virtual Intership/Accenture.png" alt="intership" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=Accenture+Internship" alt="Accenture Internship Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/accenture.png" alt="intership Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=Accenture" alt="Accenture Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
                         <h3>Technology Consulting Job Simulation</h3>
                         <p class="certificate-issuer">Accenture via Forage</p>
-                        <p class="certificate-date">Issued: May 20th, 2025</p>
+                        <p class="certificate-date">Issued: May 20, 2025</p>
                         <p class="certificate-description">
-                          Completed the Accenture North America Technology Consulting Virtual Internship powered by Forage.
-                          This job simulation provided hands-on experience in real-world consulting tasks, such as understanding client needs, analyzing business challenges, developing technology-driven solutions, and presenting strategic recommendations.Worked on tasks like data analysis, process optimization, stakeholder communication, and digital transformation strategies, gaining valuable insights into the role of a technology consultant.
+                            Completed the Accenture North America Technology Consulting Virtual Internship powered by Forage, providing hands-on experience in real-world consulting tasks.
                         </p>
-                        <!----<div class="certificate-skills">
-                            <span class="skill-tag">Object-Oriented Programming (OOP)</span>
-                            <span class="skill-tag">Classes and Objects</span>
-                            <span class="skill-tag">Inheritance & Polymorphism</span>
-                            <span class="skill-tag">STL (Standard Template Library)</span>
-                            <span class="skill-tag">Functions and Recursion</span>
-                            <span class="skill-tag">Pointers & Memory Management</span>
-                            <span class="skill-tag">Algorithms & Logic Building</span>
-                        </div>-->
+                        <div class="certificate-skills">
+                            <span class="skill-tag">Technology Consulting</span>
+                            <span class="skill-tag">Business Analysis</span>
+                            <span class="skill-tag">Client Communication</span>
+                            <span class="skill-tag">Strategic Planning</span>
+                        </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Virtual Intership/Accenture - Technology Consulting Job Simulation.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/DMrpG9KbbePZxGfSN/AMZXXaKrixhEK2T72_DMrpG9KbbePZxGfSN_ynCAfMyaZrguGRGLW_1747744339403_completion_certificate.pdf"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-
-                 <div class="certificate-card fade-in" data-category="intership">
+                <!-- DATACOM Internship -->
+                <div class="certificate-card" data-category="intership" data-date="2024-06-08" data-search="datacom cloud job simulation forage cloud migration infrastructure planning cost optimization">
                     <div class="certificate-image-container">
-                        <img src="Assets/Virtual Intership/DATACOM.png" alt="intership" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=DATACOM+Cloud" alt="DATACOM Cloud Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/datacom.png" alt="intership Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=DATACOM" alt="DATACOM Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
                         <h3>Introduction to Cloud Job Simulation</h3>
                         <p class="certificate-issuer">DATACOM via Forage</p>
-                        <p class="certificate-date">Issued: June 8th, 2024</p>
+                        <p class="certificate-date">Issued: June 8, 2024</p>
                         <p class="certificate-description">
-                         Completed the “Introduction to Cloud Job Simulation” by Datacom through Forage.
-                         This virtual program provided practical exposure to core cloud computing concepts including cloud migration, infrastructure planning, cost optimization, and client communication.Simulated real-world tasks such as preparing cloud adoption strategies, evaluating service models (IaaS, PaaS, SaaS), and identifying business requirements for cloud deployment.Gained insights into cloud consulting and how cloud technology supports digital transformation in enterprises.
+                            Completed the "Introduction to Cloud Job Simulation" by Datacom through Forage, providing practical exposure to core cloud computing concepts.
                         </p>
-                        <!----<div class="certificate-skills">
-                            <span class="skill-tag">Object-Oriented Programming (OOP)</span>
-                            <span class="skill-tag">Classes and Objects</span>
-                            <span class="skill-tag">Inheritance & Polymorphism</span>
-                            <span class="skill-tag">STL (Standard Template Library)</span>
-                            <span class="skill-tag">Functions and Recursion</span>
-                            <span class="skill-tag">Pointers & Memory Management</span>
-                            <span class="skill-tag">Algorithms & Logic Building</span>
-                        </div>-->
+                        <div class="certificate-skills">
+                            <span class="skill-tag">Cloud Migration</span>
+                            <span class="skill-tag">Infrastructure Planning</span>
+                            <span class="skill-tag">Cost Optimization</span>
+                            <span class="skill-tag">Cloud Strategy</span>
+                        </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Virtual Intership/DATACOM - Introduction to cloud job simulation.pdf"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/gCW7Xki5Y3vNpBmnn/qsuRRyXDZ7Dj2QFx4_gCW7Xki5Y3vNpBmnn_ynCAfMyaZrguGRGLW_1748061457667_completion_certificate.pdf"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="certificate-card fade-in" data-category="development">
+                <!-- HTML5 Certificate -->
+                <div class="certificate-card" data-category="development" data-date="2024-06-08" data-search="html5 iit bombay spoken tutorial web development semantic html forms tables">
                     <div class="certificate-image-container">
-                        <img src="Assets/Certificate Image/HTML5 Spoken Tutorial.png" alt="html" class="certificate-full-image">
+                        <img src="/placeholder.svg?height=180&width=320&text=HTML5+Certificate" alt="HTML5 Certificate" class="certificate-full-image">
                     </div>
                     <div class="certificate-header">
-                        <div class="certificate-logo"><img src="Assets/Education Company Logo/spoken tutorial.jpg" alt="intership Logo"
-                                class="certificate-logo-img"></div>
+                        <div class="certificate-logo">
+                            <img src="/placeholder.svg?height=30&width=30&text=IIT" alt="IIT Bombay Logo" class="certificate-logo-img">
+                        </div>
                         <div class="certificate-badge">Verified Certificate</div>
                     </div>
                     <div class="certificate-content">
                         <h3>HTML5</h3>
-                        <p class="certificate-issuer">Spoken Tutorial , IIT Bombay</p>
-                        <p class="certificate-date">Issued: June 8th, 2024</p>
+                        <p class="certificate-issuer">Spoken Tutorial, IIT Bombay</p>
+                        <p class="certificate-date">Issued: June 8, 2024</p>
                         <p class="certificate-description">
-                         Completed the HTML Fundamentals course offered by Spoken Tutorial, IIT Bombay, focusing on the foundational aspects of web development. This course covered the structure of web pages using HTML tags and elements, semantic HTML, lists, tables, forms, media embedding, and basic layout techniques.
-                         Gained hands-on experience in creating structured, standards-compliant HTML pages that form the backbone of modern websites.
+                            Completed the HTML Fundamentals course offered by Spoken Tutorial, IIT Bombay, focusing on the foundational aspects of web development.
                         </p>
-
-                       <div class="certificate-skills">
-                           <span class="skill-tag">Web Page Structure</span>
-                           <span class="skill-tag">Semantic HTML</span>
-                           <span class="skill-tag">Forms and Tables</span>
-                           <span class="skill-tag">Embedding Media</span>
-                           <span class="skill-tag">Lists and Links</span>
-                           <span class="skill-tag">Frontend Development Basics</span>
-                           <span class="skill-tag">Responsive Markup</span>
-                           <span class="skill-tag">Clean Code Practices</span>
-                           <span class="skill-tag">Beginner Web Development</span>
-                       </div>
-
+                        <div class="certificate-skills">
+                            <span class="skill-tag">Web Page Structure</span>
+                            <span class="skill-tag">Semantic HTML</span>
+                            <span class="skill-tag">Forms & Tables</span>
+                            <span class="skill-tag">Media Embedding</span>
+                        </div>
                         <div class="certificate-actions">
-                            <a href="Assets/Certificate PDF/IIT Bombay/"
-                                class="btn btn-outline">View Certificate</a>
-                            <a href="https://spoken-tutorial.org/software-training/test/participant/certificate/115298/3859121/"
-                                class="btn btn-secondary">Verify</a>
+                            <a href="#" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
                         </div>
                     </div>
                 </div>
 
+                <!-- 
+                ========================================
+                نیا Certificate Add کرنے کے لیے یہ Template استعمال کریں:
+                ========================================
+                
+                <div class="certificate-card" data-category="CATEGORY_NAME" data-date="YYYY-MM-DD" data-search="search keywords separated by spaces">
+                    <div class="certificate-image-container">
+                        <img src="YOUR_IMAGE_PATH" alt="Certificate Name" class="certificate-full-image">
+                    </div>
+                    <div class="certificate-header">
+                        <div class="certificate-logo">
+                            <img src="LOGO_PATH" alt="Organization Logo" class="certificate-logo-img">
+                        </div>
+                        <div class="certificate-badge">Verified Certificate</div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Certificate Title</h3>
+                        <p class="certificate-issuer">Organization Name</p>
+                        <p class="certificate-date">Issued: Month Day, Year</p>
+                        <p class="certificate-description">
+                            Certificate description here...
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-tag">Skill 1</span>
+                            <span class="skill-tag">Skill 2</span>
+                            <span class="skill-tag">Skill 3</span>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="PDF_LINK" class="btn btn-outline">View Certificate</a>
+                            <button class="btn btn-secondary" onclick="openModal(this)">Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                Categories: cloud, programming, development, office, intership
+                -->
 
-
+            </div>
+            <div class="no-results" id="noResults">
+                <div class="no-results-icon">🔍</div>
+                <h3>No certificates found</h3>
+                <p>Try adjusting your search or filter criteria</p>
             </div>
         </div>
     </section>
 
-
-    <!--<section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item fade-in">
-                    <div class="stat-number">4</div>
-                    <div class="stat-label">Total Certificates</div>
-                </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-number">2</div>
-                    <div class="stat-label">Industry Certifications</div>
-                </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Verified</div>
-                </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">Technology Domains</div>
-                </div>
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Certificate Details</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be populated by JavaScript -->
             </div>
         </div>
-    </section>---->
-    
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
 
     <script src="certificate.js"></script>
 </body>
