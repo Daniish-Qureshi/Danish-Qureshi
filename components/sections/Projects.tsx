@@ -1,222 +1,137 @@
-'use client'
+"use client";
 
-import { ExternalLink, Github } from 'lucide-react'
+const projects = [
+  {
+    number: "01",
+    title: "AgriSmart (KisanAI)",
+    tagline: "AI-powered farming platform — BCA Final Year Project",
+    description: "A full-stack AI farming platform with 22+ pages — Live Weather, Government Schemes, Crop Disease Detection via Groq Vision AI, Equipment Rental Marketplace, and Farmer Wallet with Razorpay payment gateway. Built with multilingual support (Hindi + English) and a premium dark green/gold UI.",
+    tags: ["React.js", "Node.js", "PostgreSQL", "Groq AI", "Razorpay", "Tailwind CSS"],
+    live: "https://agri-smart-ai-xi.vercel.app/",
+    github: "https://github.com/Daniish-Qureshi/AgriSmart-AI",
+    badge: "Live", badgeColor: "#16A34A", badgeBg: "#F0FDF4",
+  },
+  {
+    number: "02",
+    title: "PitchAI",
+    tagline: "AI-powered pitch deck generator",
+    description: "Generate investor-ready pitch decks in seconds. Powered by Groq AI (Llama 3.3 70B), this tool takes your startup idea and produces a complete, structured slide deck tailored to impress investors. Features Apple-style dark glassmorphism UI and deck history dashboard.",
+    tags: ["React + Vite", "Node.js", "Express", "MongoDB Atlas", "Groq AI", "Tailwind CSS"],
+    live: "https://ai-pitch-deck-one.vercel.app/",
+    github: "https://github.com/Daniish-Qureshi/ai-pitch-deck",
+    badge: "Live", badgeColor: "#16A34A", badgeBg: "#F0FDF4",
+  },
+  {
+    number: "03",
+    title: "DocVerifyAI",
+    tagline: "AI document verification system",
+    description: "Intelligent document verification using computer vision and AI. Upload a document and get instant authenticity checks, tampering detection, and data extraction — powered by OpenCV and Google Gemini Vision API. Microservice architecture with Python FastAPI + Node.js.",
+    tags: ["React.js", "Python FastAPI", "OpenCV", "Gemini Vision API", "Node.js", "Tailwind CSS"],
+    live: "https://doc-verify-ai-eight.vercel.app/",
+    github: "https://github.com/Daniish-Qureshi/DocVerifyAI",
+    badge: "Live", badgeColor: "#16A34A", badgeBg: "#F0FDF4",
+  },
+  {
+    number: "04",
+    title: "Lost & Found Portal",
+    tagline: "Real-time community lost & found platform",
+    description: "A production-grade web platform built during my internship at Codveda Technology. Features real-time notifications via Socket.io, image uploads with Cloudinary, JWT authentication, and a fully mobile-responsive UI with category-based filtering.",
+    tags: ["Node.js", "Express", "MongoDB", "Socket.io", "Cloudinary", "React.js"],
+    live: "https://lost-and-found-website-six.vercel.app/",
+    github: "https://github.com/Daniish-Qureshi/Lost-And-Found-Website",
+    badge: "Live", badgeColor: "#16A34A", badgeBg: "#EFF6FF",
+  },
+];
+
+function Arrow() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0 }}>
+      <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}
 
 export default function Projects() {
-  const projects = [
-    {
-      title: 'Hospital Management System',
-      description: 'A comprehensive console-based Hospital Management System built using C language. This project efficiently manages patients, doctors, and appointments using data structures, file handling, and a user-friendly menu-driven interface.',
-      tags: ['C Language',],
-      github: 'https://github.com/Daniish-Qureshi/Hospital-Management-System-in-C',
-      live: '#',
-    },
-    {
-      title: 'Captcha Generator',
-      description: 'A simple and interactive CAPTCHA generator built with HTML, CSS, and JavaScript. This project provides a basic implementation of a CAPTCHA system that can be integrated into web applications for basic bot protection.',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Captcha-Generator',
-      live: 'https://captcha-generator-orpin.vercel.app/',
-    },
-    {
-      title: 'Bus Reservation System',
-      description: 'A console-based Bus Reservation System that allows users to book bus tickets, view available buses, and manage reservations efficiently.',
-      tags: ['C++ Language'],
-      github: 'https://github.com/Daniish-Qureshi/Bus-Reservation-System-in-Cpp',
-      live: '#',
-    },
-    {
-      title: 'Contact Management System',
-      description: 'A lightweight, command-line based Contact Management System implemented in C. This project provides a simple yet functional way to manage your contacts through an easy-to-use text interface.',
-      tags: ['C Language'],
-      github: 'https://github.com/Daniish-Qureshi/Contact-Mangement-System-in-C',
-      live: '#',
-    },
-    {
-      title: 'Bank Management System',
-      description: 'A simple yet powerful Bank Management System implemented in C language. This console-based application provides essential banking operations for account management.',
-      tags: ['C Language'],
-      github: 'https://github.com/Daniish-Qureshi/Bank-Management-System-in-C',
-      live: '#',
-    },
-    {
-      title: 'Simple Calculator',
-      description: 'A modern, responsive calculator web application built with HTML, CSS, and JavaScript.',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/SimpleCalculator',
-      live: 'https://simple-calculator-two-rust.vercel.app/',
-    },
-    {
-      title: 'Netflix Clone',
-      description: 'A simple and responsive Netflix Clone built using HTML and CSS. This project mimics the homepage design of Netflix and is fully user-friendly with a clean layout, optimized for different screen sizes.',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Netflix-Clone',
-      live: 'https://netflix-clone-eight-inky-35.vercel.app/',
-    },
-    {
-      title: 'Radiant Dental Website',
-      description: 'Radiant Dental is a modern website for a dental practice, providing an online presence that highlights expert dental care services. The site aims to build trust with potential patients by presenting information about services, the experienced team of dentists, and ways to get in touch. It features a clean, user-friendly design optimized for both desktop and mobile devices.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Radiant-Dental-Website',
-      live: 'https://radiant-dental-website.vercel.app/',
-    },
-    {
-      title: 'Add Book Library System',
-      description: 'A modern and responsive Book Library System built using HTML, CSS, and JavaScript This project allows users to add, delete, mark as complete, and manage their favorite books-- all with a clean, responsive, and user-friendly interface.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Add-Book-Library-System',
-      live: 'https://add-book-library-system.vercel.app/',
-    },
-    {
-      title: 'Burger King Website Clone',
-      description: 'A modern, responsive Burger King website clone built using HTML, CSS, and JavaScript. This project replicates Burger King’s official website with a clean, interactive, and mobile-friendly design. Perfect for learning front-end development and practicing responsive layouts.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Burger-King',
-      live: 'https://burger-king-jade.vercel.app/',
-    },
-    {
-      title: 'Anon E-commerce Website',
-      description: 'A modern, responsive e-commerce website for a fashion store built with HTML, CSS, and JavaScript. The website features a clean, user-friendly interface with multiple pages for shopping, blog, about, and contact.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Anon-E-commers',
-      live: 'https://anon-e-commers.vercel.app/',
-    },
-    {
-      title: 'CareerMatch - AI-Powered Career Suggestion Tool',
-      description: 'CareerMatch is an intelligent career assessment tool that helps you discover the perfect career path based on your skills, interests, education, and work preferences. Our AI-powered algorithm analyzes your profile and matches you with the most suitable careers from a database of 50+ professions. Whether you are a student exploring options or a professional considering a career change, CareerMatch provides personalized recommendations to guide you towards a fulfilling career. With an intuitive interface and comprehensive insights, CareerMatch is your go-to resource for making informed career decisions.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/CareerMatch',
-      live: 'https://career-match-red.vercel.app/',
-    },
-    {
-      title: 'Dairy Management System in C',
-      description: 'A simple dairy management system built in C programming language. This project manages dairy products, suppliers, and sales records with a user-friendly console interface.',
-      tags: ['C Programming'],
-      github: 'https://github.com/Daniish-Qureshi/Dairy-Management-System-in-C-Language',
-      live: '',
-    },
-    {
-      title: 'Coffee Lading Page',
-      description: 'A simple and responsive Coffee Lading Page built using HTML, CSS and JavaScript. This project mimics the homepage design of Coffee Website and is fully user-friendly with a clean layout, optimized for different screen sizes.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Coffee-Lading-Page',
-      live: 'https://coffee-lading-page.vercel.app/',
-    },
-    {
-      title: 'To-Do List Web Application',
-      description: 'A simple and responsive To-Do List web application built using HTML, CSS, and JavaScript. The application allows users to add, manage, and track their daily tasks efficiently through an interactive and user-friendly interface.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Todo-list-App',
-      live: 'https://todo-list-app-nine-rho.vercel.app/',
-    },
-    {
-      title: 'Text to Voice Converter',
-      description: 'A web-based Text to Voice Converter built using HTML, CSS, and JavaScript that converts written text into speech using the Web Speech API. The application provides an intuitive interface where users can enter text and instantly hear the spoken output.',
-      tags: ['HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Text-To-Voice-Converter',
-      live: 'https://text-to-voice-converter-iota.vercel.app/',
-    },
-    {
-      title: 'QR Code Generator',
-      description: 'A QR Code Generator web application built using HTML, CSS, and JavaScript that allows users to generate QR codes instantly from text or URLs. The application dynamically creates QR codes using a public QR API and displays them in real time.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/QR-Code-Generator',
-      live: 'https://person-age-calculator-jv9f.vercel.app/',
-    },
-    {
-      title: 'Person Age Calculator',
-      description: 'A responsive Age Calculator web application built using HTML, CSS, and JavaScript that calculates a person’s exact age based on their date of birth. The application dynamically computes the age in years, months, and days using JavaScript date functions.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Person-Age-Calculator',
-      live: 'https://person-age-calculator.vercel.app/',
-    },
-    {
-      title: 'Notes App',
-      description: 'A simple and responsive Notes App built using HTML, CSS, and JavaScript that allows users to create, edit, and delete notes directly in the browser. The application stores notes using Local Storage, ensuring data persistence even after page refresh.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Notes-App',
-      live: 'https://notes-app-eta-rouge.vercel.app/',
-    },
-    {
-      title: 'Text to Image Generator',
-      description: 'A web-based Text to Image Generator built using HTML, CSS, and JavaScript that converts user-provided text prompts into AI-generated images using an external image generation API. The application provides a simple interface for entering prompts and dynamically displays generated images.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Image-Search-Engine',
-      live: 'https://image-search-engine-eight-lake.vercel.app/',
-    },
-    {
-      title: 'Furniture Flair – Furniture Website',
-      description: 'Furniture Flair ek modern and responsive furniture showcase website hai, built using HTML, CSS, and JavaScript. Is project ka focus clean UI design, product presentation, aur smooth user experience par hai.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Furniture-Flair-Website',
-      live: 'https://furniture-flair-website.vercel.app/',
-    },
-    {
-      title: 'Gameon Galaxy – Gaming Website',
-      description: 'GameOn Galaxy ek modern and responsive gaming-themed website hai, built using HTML, CSS, and JavaScript. Is project ka focus engaging UI design, interactive sections, aur gaming-oriented visual experience create karna tha.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Gameon-Galaxy-Website',
-      live: 'https://gameon-galaxy-website.vercel.app/',
-    },
-    {
-      title: 'Fitness Fusion – Fitness & Gym Website',
-      description: 'Fitness Fusion ek modern and responsive fitness-themed website hai, built using HTML, CSS, and JavaScript. Is project ka focus strong visual design, structured content layout, aur engaging user experience create karna tha for a gym or fitness brand.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/Fitness-Website',
-      live: 'https://fitness-website-sigma-brown.vercel.app/',
-    },
-    {
-      title: 'EduPathway – Educational Website',
-      description: 'EduPathway ek responsive and structured educational website hai, built using HTML, CSS, and JavaScript. Is project ka purpose students ko courses, career paths, aur learning resources ke baare me clear information provide karna tha through a clean and organized interface.',
-      tags: ['HTML5','CSS3','JavaScript'],
-      github: 'https://github.com/Daniish-Qureshi/EduPathWay-Website',
-      live: 'https://edu-path-way-website.vercel.app/',
-    },
-  ]
-
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h2 className="text-4xl font-bold mb-12 text-foreground">Projects</h2>
+    <section id="projects" style={{ padding: "120px 24px", maxWidth: 1100, margin: "0 auto" }}>
+      <p className="sec-label" style={{ marginBottom: 16 }}>Projects</p>
+      <h2 className="serif" style={{ fontSize: "clamp(32px,4vw,48px)", lineHeight: 1.15, letterSpacing: "-0.02em", color: "#111111", marginBottom: 56 }}>
+        Things I&apos;ve built
+      </h2>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-card rounded-lg border border-border p-6 hover:border-primary transition-all hover:shadow-lg"
+      <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+        {projects.map((p) => (
+          <article
+            key={p.title}
+            style={{ display: "grid", gridTemplateColumns: "72px 1fr", gap: 32, padding: 36, backgroundColor: "white", border: "1px solid #E5E2DC", borderRadius: 20, transition: "all 0.25s ease" }}
+            className="project-card"
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "#C8C4BC"; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 30px rgba(0,0,0,0.07)"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "#E5E2DC"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
           >
-            <h3 className="text-2xl font-semibold text-primary mb-3">{project.title}</h3>
-            <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+            <div className="serif" style={{ fontSize: 48, lineHeight: 1, color: "#E5E2DC", fontStyle: "italic", paddingTop: 4 }}>{p.number}</div>
 
-            <div className="flex flex-wrap gap-2 mb-6">
-              {project.tags.map((tag, i) => (
-                <span
-                  key={i}
-                  className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <div>
+              <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 16, marginBottom: 16, flexWrap: "wrap" }}>
+                <div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4, flexWrap: "wrap" }}>
+                    <h3 style={{ fontSize: 22, fontWeight: 700, color: "#111111", letterSpacing: "-0.02em" }}>{p.title}</h3>
+                    <span style={{ padding: "3px 10px", backgroundColor: p.badgeBg, color: p.badgeColor, fontSize: 11, fontWeight: 700, letterSpacing: "0.04em", textTransform: "uppercase", borderRadius: 999 }}>
+                      {p.badge}
+                    </span>
+                  </div>
+                  <p style={{ fontSize: 14, color: "#6B6B6B", fontWeight: 500 }}>{p.tagline}</p>
+                </div>
 
-            <div className="flex gap-4">
-              <a
-                href={project.github}
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Github size={20} />
-                <span>Code</span>
-              </a>
-              <a
-                href={project.live}
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <ExternalLink size={20} />
-                <span>Live</span>
-              </a>
+                <div style={{ display: "flex", gap: 10, flexShrink: 0 }}>
+                  <a
+                    href={p.github} target="_blank" rel="noopener noreferrer"
+                    style={{ display: "inline-flex", alignItems: "center", gap: 5, padding: "7px 14px", fontSize: 13, fontWeight: 600, color: "#6B6B6B", backgroundColor: "#F9F7F4", textDecoration: "none", borderRadius: 8, border: "1px solid #E5E2DC", transition: "all 0.2s ease" }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#111111"; (e.currentTarget as HTMLElement).style.borderColor = "#C8C4BC"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#6B6B6B"; (e.currentTarget as HTMLElement).style.borderColor = "#E5E2DC"; }}
+                  >
+                    GitHub <Arrow />
+                  </a>
+                  {p.live && (
+                    <a
+                      href={p.live} target="_blank" rel="noopener noreferrer"
+                      style={{ display: "inline-flex", alignItems: "center", gap: 5, padding: "7px 14px", fontSize: 13, fontWeight: 600, color: "white", backgroundColor: "#111111", textDecoration: "none", borderRadius: 8, transition: "opacity 0.2s ease" }}
+                      onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.8")}
+                      onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.opacity = "1")}
+                    >
+                      Live <Arrow />
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: "#6B6B6B", marginBottom: 20 }}>{p.description}</p>
+
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}>
+                {p.tags.map((tag) => (
+                  <span key={tag} className="tag">{tag}</span>
+                ))}
+              </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
+
+      <div style={{ marginTop: 48, textAlign: "center" }}>
+        <a
+          href="https://github.com/Daniish-Qureshi" target="_blank" rel="noopener noreferrer"
+          style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 15, fontWeight: 600, color: "#6B6B6B", textDecoration: "none", padding: "12px 24px", border: "1px solid #E5E2DC", borderRadius: 10, transition: "all 0.2s ease" }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#111111"; (e.currentTarget as HTMLElement).style.borderColor = "#C8C4BC"; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#6B6B6B"; (e.currentTarget as HTMLElement).style.borderColor = "#E5E2DC"; }}
+        >
+          View all projects on GitHub <Arrow />
+        </a>
+      </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .project-card { grid-template-columns: 1fr !important; gap: 16px !important; }
+        }
+      `}</style>
     </section>
-  )
+  );
 }

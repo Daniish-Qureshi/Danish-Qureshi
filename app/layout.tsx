@@ -1,46 +1,23 @@
-import React from "react"
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
-
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Danish Qureshi - Frontend Developer Portfolio',
-  description: 'This is my latest and professional portfolio website. It showcases my skills, projects, and experience in the field of software development.',
-  generator: 'danish-qureshi',
-  icons: {
-    icon: [
-      {
-        url: '/public/danih-png.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/public/danih-dark-png.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/public/danish.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  title: "Danish Qureshi — Full Stack Developer",
+  description:
+    "BCA final-year student and Full Stack Developer specializing in React, Next.js, Node.js, and AI-powered applications.",
+  keywords: ["Danish Qureshi", "Full Stack Developer", "React", "Next.js", "Node.js", "AI Developer"],
+  authors: [{ name: "Danish Qureshi" }],
+  openGraph: {
+    title: "Danish Qureshi — Full Stack Developer",
+    description: "Building modern web apps and AI-powered tools. Open to remote opportunities.",
+    type: "website",
   },
-}
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`font-sans antialiased`}>
-        {children}
-        <Analytics />
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <body>{children}</body>
     </html>
-  )
+  );
 }
