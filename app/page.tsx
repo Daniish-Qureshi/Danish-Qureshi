@@ -45,7 +45,7 @@ export default function Home() {
                 {link.label}
               </a>
             ))}
-            <a href="/public/DANISH RESUME FULL STACK.pdf" target="_blank" rel="noopener noreferrer"
+            <a href="/public/DANISH QURESHI FRONTEND DEVELOPER RESUME.pdf" target="_blank" rel="noopener noreferrer"
               style={{ marginLeft: 8, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "white", backgroundColor: "#111111", textDecoration: "none", borderRadius: 8 }}>
               Resume ↗
             </a>
@@ -72,7 +72,7 @@ export default function Home() {
                 {link.label}
               </a>
             ))}
-            <a href="/public/DANISH RESUME FULL STACK.pdf" target="_blank" rel="noopener noreferrer"
+            <a href="/public/DANISH QURESHI FRONTEND DEVELOPER RESUME.pdf" target="_blank" rel="noopener noreferrer"
               style={{ display: "inline-block", marginTop: 16, padding: "10px 24px", fontSize: 14, fontWeight: 600, color: "white", backgroundColor: "#111111", textDecoration: "none", borderRadius: 8 }}>
               Resume ↗
             </a>

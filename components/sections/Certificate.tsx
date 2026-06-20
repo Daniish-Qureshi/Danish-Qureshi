@@ -26,14 +26,6 @@ const certificates = [
     color: "#F0FDF4", borderColor: "#BBF7D0", textColor: "#15803D",
   },
   {
-    title: "AI Learning Path – Virtual Internship 7.0",
-    issuer: "Infosys Springboard",
-    date: "2025 – 2026",
-    desc: "Completed 16-module AI Learning Path (122+ hours) covering Machine Learning, Deep Learning, NLP and AI model deployment.",
-    credentialId: null,
-    color: "#F0F9FF", borderColor: "#BAE6FD", textColor: "#0369A1",
-  },
-  {
     title: "SQL (Basic)",
     issuer: "HackerRank",
     date: "Aug 2025",
